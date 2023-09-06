@@ -1,0 +1,80 @@
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff; /* Ajoutez une couleur d'arrière-plan si nécessaire */
+  z-index: 100;
+}
+P {
+  font-size: 36px;
+  color: green;
+
+}
+.Z{
+  font-size: 26px;
+  color: black;
+}
+
+
+
+/* Styles pour le bouton de menu */
+#menu-toggle {
+  display: block;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Styles pour la barre latérale */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  transition: left 0.3s ease;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: color 0.2s;
+}
+
+.menu a:hover {
+  color: #ff8c00; /* Changez la couleur au survol */
+}
+
+/* Styles pour afficher le menu latéral */
+.sidebar.open {
+  left: 0;
+}
+
+/* Ajoutez une marge gauche au contenu principal lorsque le menu est ouvert */
+.sidebar.open + body {
+  margin-left: 250px;
+}
